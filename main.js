@@ -4,6 +4,7 @@ storage.setItem('name', 'aaaa');
 
 var name = storage.getItem('name');
 window.addEventListener('storage', (e) => {
+    
     console.log(e.key); // key
     console.log(e.oldValue); //古い値
     console.log(e.newValue); //変更後の値
